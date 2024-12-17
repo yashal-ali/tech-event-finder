@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 
-export default {
+
+
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,10 +11,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        headingColor: "#034D82",
+        textColor: "#90A3B4",
+       
+      },
+      backgroundColor: {
+        button: "#eeebe6a1",
+      },
+      fontFamily: {
+        sans: ["NOIRetBLANC"],
+        helvetica: "Helvetica",
       },
     },
   },
   plugins: [],
-} satisfies Config;
+}satisfies Config;

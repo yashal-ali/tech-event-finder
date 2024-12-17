@@ -1,0 +1,51 @@
+id,Event Name,Location,Address,Organizer Name,Event Date,Event Time,Event Type,City
+28,Agile Workshop,Tech Workshop,321 Agile Ln,Chris Wilson,2024-12-29,16:00,Workshop,Karachi
+10,AI,Healthcare Center,876 Elm St,Michael Scott,2024-12-24,10:30,Studying,Karachi
+3,Blockchain Summit,Grand Hotel,789 Parkway,Tom Lee,2024-12-23,09:00,Conference,New York
+4,Mobile App Expo,Exhibition Center,101 Broadway,Alice Johnson,2024-12-21,14:00,Conference,Chicago
+5,ReactJS Workshop,Tech Hub,202 Innovation Rd,Bob Miller,2024-12-25,11:00,Meeting,Boston
+6,Tech Fest,Convention Center,456 Career Rd,Amy Clark,2024-12-29,14:00,Studying,Karachi
+7,"Tech Career ",Convention Center,456 Career Rd,Amy Clark,2024-12-29,14:00,Studying,Karachi
+8,Tech Career Fair,Convention Center,456 Career Rd,Amy Clark,2024-12-29,14:00,Conference,Karachi
+9,Big Data Symposium,Ocean View Hall,789 West Rd,Henry Garcia,2024-12-18,13:00,Conference,Sydney
+10,Tech Talk,City Square,432 Oak Ave,Grace Clark,2024-12-19,17:00,Meeting,Tokyo
+11,AI in Healthcare,Healthcare Center,876 Elm St,Michael Scott,2024-12-24,10:30,Conference,Karachi
+12,Cloud Computing Workshop,Tech Hub,567 Cloud Ave,Sarah Miller,2024-12-21,08:30,Workshop,San Francisco
+13,React Native Meetup,Innovation Park,654 Startup Dr,Daniel Green,2024-12-29,18:00,Meeting,Berlin
+14,IoT for Smart Cities,Tech Park,210 Smart Ln,Isla White,2024-12-23,11:30,Conference,Los Angeles
+15,Data Science Summit,Convention Center,132 Data Rd,James Brown,2024-12-22,09:30,Conference,Karachi
+16,Blockchain for Business,Conference Room,303 Web St,Patricia Smith,2024-12-20,16:00,Workshop,San Francisco
+17,AI for Good,Central Park,404 Idea Ln,Jessica Young,2024-12-19,12:00,Meeting,Mumbai
+18,Design Thinking Workshop,Innovation Center,234 Design Ave,Kate Wilson,2024-12-25,10:00,Workshop,Singapore
+19,DevOps Meetup,Startup Hub,876 DevOps Blvd,Mike Lee,2024-12-24,14:00,Meeting,London
+20,Tech in Education,University Hall,987 College Rd,Richard Taylor,2024-12-28,13:00,Conference,New York
+21,Women in Tech,Main Auditorium,1023 Women’s Rd,Charlotte King,2024-12-21,19:30,Meeting,San Francisco
+22,AR/VR Expo,Expo Center,214 Vision St,Jacob Perez,2024-12-23,11:00,Conference,Los Angeles
+23,Futuristic Tech Conference,Innovation Space,900 Future Rd,John Lee,2024-12-22,16:00,Conference,San Francisco
+24,Machine Learning Workshop,Tech Lab,456 Tech Ln,David Moore,2024-12-30,09:00,Workshop,Seattle
+25,Digital Transformation Forum,Conference Hall,321 Digital Rd,Rebecca Harris,2024-12-26,10:30,Conference,Mumbai
+26,Tech Leadership Summit,Event Hall,654 Leader Ln,Paul Evans,2024-12-20,08:30,Conference,Sydney
+27,Cloud Computing Forum,Global Center,432 Cloud Blvd,William Lee,2024-12-24,14:00,Conference,Lahore
+28,Smart Cities Conference,Main Conference Room,789 Smart St,Nina Campbell,2024-12-19,13:00,Conference,Boston
+29,Agile Methodology Workshop,Tech Workshop,321 Agile Ln,Chris Wilson,2024-12-29,16:00,Workshop,Karachi
+30,JavaScript for Beginners,Community Hall,654 JS Rd,Jack Moore,2024-12-30,12:00,Workshop,San Francisco
+31,Tech Innovations Expo,Convention Center,987 Tech Ave,Emily Harris,2024-12-21,09:00,Conference,New York
+32,Data Analytics Workshop,Office Tower,543 Data St,Oliver Thompson,2024-12-18,14:30,Workshop,London
+33,Machine Learning in Finance,Finance Hub,321 ML Rd,Lucy Adams,2024-12-23,10:00,Meeting,San Francisco
+34,Tech Trends Summit,City Plaza,890 Trend St,Charlie Clark,2024-12-22,14:00,Conference,Sydney
+35,Startup Conference,Tech Campus,234 Startup Blvd,Richard Wilson,2024-12-27,13:30,Conference,Berlin
+36,Big Data in Healthcare,Medical Center,678 Health Rd,Joseph Lee,2024-12-19,11:00,Conference,Kuala Lumpur
+37,Artificial Intelligence Conference,Tech Expo,345 AI Ave,Laura Johnson,2024-12-20,15:00,Conference,San Francisco
+,,,,,,,,
+39,Tech for Sustainability,Green Hub,100 Eco St,Emily Garcia,2024-12-29,09:30,Conference,Karachi
+40,Blockchain for Developers,DevHub,567 Blockchain Ln,Andrew Walker,2024-12-28,18:00,Workshop,Mumbai
+41,Data Science for Business,University Hall,213 Science Blvd,Clara White,2024-12-22,08:30,Conference,Lahore
+42,Quantum Computing Symposium,Tech Space,432 Quantum Rd,Daniel Brown,2024-12-24,10:00,Conference,Singapore
+43,AI & ML for Business,Tech Park,890 AI Blvd,Anna Martin,2024-12-23,15:00,Workshop,Boston
+44,"Software ",Developer Hub,654 Software Rd,Paul Green,2024-12-30,14:00,Workshop,Karachi
+45,"Software Engineering ",Developer Hub,654 Software Rd,Paul Green,2024-12-30,14:00,Workshop,Karachi
+46,Software Engineering Workshop,Developer Hub,654 Software Rd,Paul Green,2024-12-30,14:00,Workshop,Karachi
+47,Data Visualization Summit,Convention Center,765 Viz Blvd,John King,2024-12-19,16:00,Conference,New York
+48,"Tech ",Convention Center,456 Career Rd,Amy Clark,2024-12-29,14:00,Meeting,Karachi
+49,Tech Career Fair,Convention Center,456 Career Rd,Amy Clark,2024-12-29,14:00,Meeting,Karachi
+50,Startup Innovation Forum,Tech Village,987 Innovation Rd,Michael White,2024-12-20,10:00,Conference,Boston
