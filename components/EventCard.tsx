@@ -1,8 +1,4 @@
-import {
-  userIcon,
-  addressIcon,
-  editIcon,
-} from "@/public/assets";
+import { userIcon, addressIcon, editIcon } from "@/public/assets";
 import { Event } from "@/types/index";
 import { formatTime } from "@/utils";
 import Image from "next/image";
@@ -28,7 +24,9 @@ const EventCard = ({ event, onEditClick }: EventCardProps) => {
     <div className="border p-4 rounded-lg shadow-md bg-white hover:shadow-lg transition-shadow duration-300 relative">
       <div className="flex items-center justify-between text-gray-500 mb-2">
         <div>
-          <span className="mr-4">{new Date(eventDate).toDateString()}</span>
+          <span className="mr-4" suppressHydrationWarning={true}>
+            {new Date(eventDate).toDateString()}
+          </span>
           <span className="mr-4">{formatTime(eventTime)}</span>
         </div>
 
@@ -36,7 +34,9 @@ const EventCard = ({ event, onEditClick }: EventCardProps) => {
           <Image src={editIcon} alt="Edit Icon" className="w-8 h-8 mr-2" />
         </button>
       </div>
-      <h2 className="text-2xl font-bold mb-1">{eventName}</h2>
+      <h2 className="text-2xl font-bold  text-headingColor font-sans my-2">
+        {eventName}
+      </h2>
       <p className="flex items-center mb-1">
         <Image src={userIcon} alt="Organizer Icon" className="w-5 h-5 mr-2" />
         {organizerName}{" "}

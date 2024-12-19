@@ -1,58 +1,54 @@
-"use client"
-import { useEffect, useState } from 'react';
-import { Event } from '@/types/index';
+"use client";
+import { useEffect, useState } from "react";
+import { Event } from "@/types/index";
 
-
-export const useEvents = (submittedCity: string | null, searchQuery: string) => {
+export const useEvents = (
+  submittedCity: string | null,
+  searchQuery: string
+) => {
   const [events, setEvents] = useState<Event[]>([]);
   const [filteredEvents, setFilteredEvents] = useState<Event[]>([]);
 
-  
   useEffect(() => {
     if (submittedCity) {
-      fetch('/api/events') 
+      fetch("/api/events")
         .then((response) => response.json())
         .then((data) => {
-          setEvents(data.data); 
+          setEvents(data.data);
         })
         .catch((error) => {
-          console.error('Error fetching events:', error);
+          console.error("Error fetching events:", error);
         });
     }
-  }, [submittedCity]); 
+  }, [submittedCity]);
 
   useEffect(() => {
+    let updatedEvents = [...events];
+
     if (submittedCity) {
-      const filteredByCity = events.filter((event) =>
+      updatedEvents = updatedEvents.filter((event) =>
         event.City.toLowerCase().includes(submittedCity.toLowerCase())
       );
-      setFilteredEvents(filteredByCity);
-    } else {
-      setFilteredEvents([]);
+    }
+    if (searchQuery) {
+      updatedEvents = updatedEvents.filter((event) =>
+        event["Event Name"].toLowerCase().includes(searchQuery.toLowerCase())
+      );
     }
 
-    if (searchQuery && submittedCity) {
-      const filteredBySearch = filteredEvents.filter((event) =>
-        event['Event Name'].toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setFilteredEvents(filteredBySearch);
-    }
+    setFilteredEvents(updatedEvents);
   }, [submittedCity, events, searchQuery]);
 
-  
   const handleUpdateEvent = (updatedEvent: Event) => {
     const updatedEvents = events.map((event) =>
       event.id === updatedEvent.id ? updatedEvent : event
     );
     setEvents(updatedEvents);
-    setFilteredEvents(updatedEvents);
   };
-
 
   const handleAddEvent = (newEvent: Event) => {
     const updatedEvents = [...events, newEvent];
     setEvents(updatedEvents);
-    setFilteredEvents(updatedEvents);
   };
 
   return {
