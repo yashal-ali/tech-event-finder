@@ -37,7 +37,7 @@ Follow these steps to set up and run the project locally:
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone [https://github.com/y/tech-events-finder.git](https://github.com/yashal-ali/tech-event-finder.git)
+git clone (https://github.com/yashal-ali/tech-event-finder.git)
 cd tech-events-finder
 ```
 
