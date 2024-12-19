@@ -1,5 +1,6 @@
 
-![image](https://github.com/user-attachments/assets/136f8f6a-6ed4-4b09-a37f-c1ad857589ca)
+![image](https://github.com/user-attachments/assets/81cc1afa-e621-401e-9a66-342b782ca9e0)
+
 
 # Tech Events Finder
 
@@ -36,7 +37,7 @@ Follow these steps to set up and run the project locally:
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone [https://github.com/y/tech-events-app.git](https://github.com/yashal-ali/tech-event-finder.git)
+git clone [https://github.com/y/tech-events-finder.git](https://github.com/yashal-ali/tech-event-finder.git)
 cd tech-events-finder
 ```
 
