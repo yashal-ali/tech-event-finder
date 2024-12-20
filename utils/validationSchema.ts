@@ -1,4 +1,5 @@
-import { date, object, string } from "yup";
+import { date, object, string, ref } from "yup";
+import { isFutureDate } from ".";
 
 export const addEventSchema = object({
   "Event Name": string().required("Event Name is Required"),
@@ -10,7 +11,12 @@ export const addEventSchema = object({
       /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s([0-2][0-9]|3[0-1]|0[1-9])\s\d{4}$/,
       "Date must be in 'Day Mon DD YYYY' format, e.g., 'Fri Dec 20 2024'"
     )
-    .required("Event Date is Required"),
+    .required("Event Date is Required, Event Date must be today or in the future")
+    .test(
+      "is-future-date",
+      "Event Date must be today or in the future",
+      isFutureDate
+    ),
   "Event Time": string()
     .matches(
       /^(0[1-9]|1[0-2]):[0-5][0-9]\s?(AM|PM)$/,

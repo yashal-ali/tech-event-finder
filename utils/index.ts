@@ -10,3 +10,9 @@ export const formatTime = (time: string): string => {
     hour12: true,
   });
 };
+
+export const isFutureDate = (value:string) => {
+  const parsedDate = Date.parse(value);
+  const today = new Date().setHours(0, 0, 0, 0);
+  return parsedDate >= today;
+};
