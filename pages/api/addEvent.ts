@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Papa from "papaparse";
-import { v4 as uuidv4 } from "uuid"; // Import the UUID library
+import { v4 as uuidv4 } from "uuid"; 
 
 const CSV_FILE_PATH = path.join(process.cwd(), "public/data/event_data.csv");
 
