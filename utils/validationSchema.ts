@@ -6,12 +6,12 @@ export const addEventSchema = object({
   "Organizer Name": string().required("Organizer Name is Required"),
   Location: string().required("Location is Required"),
   Address: string().required("Address is Required"),
-  "Event Date": string()
+"Event Date": string()
     .matches(
-      /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s([0-2][0-9]|3[0-1]|0[1-9])\s\d{4}$/,
+      /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun|mon|tue|wed|thu|fri|sat|sun)\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\s([0-2][0-9]|3[0-1]|0[1-9])\s\d{4}$/,
       "Date must be in 'Day Mon DD YYYY' format, e.g., 'Fri Dec 20 2024'"
     )
-    .required("Event Date is Required, Event Date must be today or in the future")
+    .required("Event Date is Required")
     .test(
       "is-future-date",
       "Event Date must be today or in the future",
