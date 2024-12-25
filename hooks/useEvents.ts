@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Event } from "@/types/index";
+import axios from "axios";
 
 export const useEvents = (
   submittedCity: string | null,
@@ -11,8 +12,8 @@ export const useEvents = (
 
   useEffect(() => {
     if (submittedCity) {
-      fetch("/api/events")
-        .then((response) => response.json())
+      axios.get("/api/events")
+        .then((response) => response.data)
         .then((data) => {
           setEvents(data.data);
         })

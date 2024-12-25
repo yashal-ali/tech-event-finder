@@ -32,6 +32,7 @@ const useAddEvent = (onAddEvent: (addNewEvent: Event) => void) => {
       setLoading(false);
     }
   };
+  
 
   return {
     handleSaveNewEvent,

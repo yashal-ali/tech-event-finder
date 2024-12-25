@@ -18,8 +18,6 @@ export default function handler(req: any, res: any) {
       });
 
       let parsedData: any[] = parsedResult.data;
-      console.log("eventId:", eventId);
-      console.log("parsedData before update:", parsedData);
       const eventIndex = parsedData.findIndex(
         (event: any) => String(event.id) === String(eventId)
       );
@@ -31,8 +29,6 @@ export default function handler(req: any, res: any) {
         return res.status(404).json({ message: "Event not found" });
       }
       const updatedCSV = Papa.unparse(parsedData);
-      // console.log("updatedCSV:", updatedCSV);
-
       fs.writeFile(CSV_FILE_PATH, updatedCSV, "utf8", (writeErr) => {
         if (writeErr) {
           return res.status(500).json({ message: "Failed to write CSV file" });

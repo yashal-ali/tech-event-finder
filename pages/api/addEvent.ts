@@ -8,7 +8,6 @@ const CSV_FILE_PATH = path.join(process.cwd(), "public/data/event_data.csv");
 export default function handler(req: any, res: any) {
   if (req.method === "POST") {
     const event = req.body;
-    console.log("event123456790", event);
     const newEvent = { ...event, id: uuidv4() };
     const formattedEvent = {
       ...newEvent.addNewEvent,
